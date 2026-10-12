@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--
+  ASTRA — Kozmik Rehberin
+  Bu dosya sitenin İSKELETİDİR (içerik ve yapı).
+  Renkler, boyutlar ve görünüm style.css dosyasındadır.
+  İki dosyayı AYNI klasöre koy ve index.html'i tarayıcıda aç.
+-->
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Telefonda sayfanın doğru boyutta görünmesi için gerekli satır -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASTRA — Kozmik Rehberin</title>
+  <meta name="description" content="12 burcu, yükselen burcu ve günlük burç yorumlarını keşfet.">
+
+  <!-- Google Fonts: başlıklar için Cormorant Garamond, metinler için Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS dosyasının bağlantısı: dosya adı style.css olmalı -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= ÜST MENÜ ================= -->
+  <header class="ust">
+    <div class="kapsayici ust-ic">
+      <a class="logo" href="#ana-sayfa">ASTRA</a>
+
+      <!-- Mobil menü: gizli onay kutusu + etiket (JavaScript gerekmez) -->
+      <input type="checkbox" id="menu-ac" class="menu-onay">
+      <label for="menu-ac" class="menu-dugmesi" aria-label="Menüyü aç veya kapat">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="menu" aria-label="Ana menü">
+        <a href="#ana-sayfa">Ana Sayfa</a>
+        <a href="#burclar">12 Burç</a>
+        <a href="#yukselen-burc">Yükselen Burç</a>
+        <a href="#gunluk">Günlük Burç Yorumları</a>
+        <a href="#rehber">Astroloji Rehberi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= KARŞILAMA ALANI ================= -->
+    <section class="hero" id="ana-sayfa">
+      <div class="kapsayici hero-ic">
+        <div class="hero-metin">
+          <p class="etiket">Kozmik Rehberin</p>
+          <h1>Kendini Yıldızların Işığında Keşfet.</h1>
+          <p class="hero-aciklama">Güneş burcunu tanı, yükselen burcunun etkilerini keşfet ve gökyüzünün sana anlattığı hikâyeyi öğren.</p>
+          <div class="dugme-grubu">
+            <a class="dugme" href="#burclar">Burcumu Keşfet</a>
+            <a class="dugme dugme-ikincil" href="#hesapla">Yükselen Burcumu Öğren</a>
+          </div>
+        </div>
+
+        <!-- Sadece CSS ile çizilen ay, gezegen ve yörüngeler -->
+        <div class="kozmos" aria-hidden="true">
+          <div class="yorunge yorunge-1"></div>
+          <div class="yorunge yorunge-2"></div>
+          <div class="ay"></div>
+          <div class="gezegen"></div>
+          <span class="yildiz y1"></span>
+          <span class="yildiz y2"></span>
+          <span class="yildiz y3"></span>
+          <span class="yildiz y4"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 12 BURÇ KARTLARI ================= -->
+    <section class="bolum" id="burclar">
+      <div class="kapsayici">
+        <header class="bolum-baslik">
+          <p class="etiket">Zodyak</p>
+          <h2>On İki Burç</h2>
+          <p>Bir karta tıklayarak burcun ayrıntılarına geçebilirsin.</p>
+        </header>
+
+        <div class="kart-izgara">
+
+          <article class="burc-kart">
+            <a href="#kor">
+              <span class="sembol" aria-hidden="true">&#9800;&#xFE0E;</span>
+              <h3>Koç</h3>
+              <p class="tarih">21 Mart – 19 Nisan</p>
+              <p class="element-rozet">Ateş</p>
+              <p>Cesur, girişken ve enerjik. İlk adımı atan kişidir.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#boga">
+              <span class="sembol" aria-hidden="true">&#9801;&#xFE0E;</span>
+              <h3>Boğa</h3>
+              <p class="tarih">20 Nisan – 20 Mayıs</p>
+              <p class="element-rozet">Toprak</p>
+              <p>Sakin, sabırlı ve güvenilir. Konforu ve güzelliği sever.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#ikizler">
+              <span class="sembol" aria-hidden="true">&#9802;&#xFE0E;</span>
+              <h3>İkizler</h3>
+              <p class="tarih">21 Mayıs – 20 Haziran</p>
+              <p class="element-rozet">Hava</p>
+              <p>Meraklı, esprili ve konuşkan. Hızlı düşünür.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#yengec">
+              <span class="sembol" aria-hidden="true">&#9803;&#xFE0E;</span>
+              <h3>Yengeç</h3>
+              <p class="tarih">21 Haziran – 22 Temmuz</p>
+              <p class="element-rozet">Su</p>
+              <p>Duygusal, şefkatli ve koruyucu. Yuvasına bağlıdır.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#aslan">
+              <span class="sembol" aria-hidden="true">&#9804;&#xFE0E;</span>
+              <h3>Aslan</h3>
+              <p class="tarih">23 Temmuz – 22 Ağustos</p>
+              <p class="element-rozet">Ateş</p>
+              <p>Cömert, yaratıcı ve özgüvenli. Sahneyi sever.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#basak">
+              <span class="sembol" aria-hidden="true">&#9805;&#xFE0E;</span>
+              <h3>Başak</h3>
+              <p class="tarih">23 Ağustos – 22 Eylül</p>
+              <p class="element-rozet">Toprak</p>
+              <p>Düzenli, titiz ve yardımsever. Ayrıntıları görür.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#terazi">
+              <span class="sembol" aria-hidden="true">&#9806;&#xFE0E;</span>
+              <h3>Terazi</h3>
+              <p class="tarih">23 Eylül – 22 Ekim</p>
+              <p class="element-rozet">Hava</p>
+              <p>Nazik, adil ve estetik düşkünü. Uyum arar.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#akrep">
+              <span class="sembol" aria-hidden="true">&#9807;&#xFE0E;</span>
+              <h3>Akrep</h3>
+              <p class="tarih">23 Ekim – 21 Kasım</p>
+              <p class="element-rozet">Su</p>
+              <p>Tutkulu, kararlı ve gizemli. Derinliği sever.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#yay">
+              <span class="sembol" aria-hidden="true">&#9808;&#xFE0E;</span>
+              <h3>Yay</h3>
+              <p class="tarih">22 Kasım – 21 Aralık</p>
+              <p class="element-rozet">Ateş</p>
+              <p>İyimser, özgür ruhlu ve maceraperest.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#oglak">
+              <span class="sembol" aria-hidden="true">&#9809;&#xFE0E;</span>
+              <h3>Oğlak</h3>
+              <p class="tarih">22 Aralık – 19 Ocak</p>
+              <p class="element-rozet">Toprak</p>
+              <p>Disiplinli, hırslı ve sorumluluk sahibi.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#kova">
+              <span class="sembol" aria-hidden="true">&#9810;&#xFE0E;</span>
+              <h3>Kova</h3>
+              <p class="tarih">20 Ocak – 18 Şubat</p>
+              <p class="element-rozet">Hava</p>
+              <p>Özgün, bağımsız ve yenilikçi bir düşünür.</p>
+            </a>
+          </article>
+
+          <article class="burc-kart">
+            <a href="#balik">
+              <span class="sembol" aria-hidden="true">&#9811;&#xFE0E;</span>
+              <h3>Balık</h3>
+              <p class="tarih">19 Şubat – 20 Mart</p>
+              <p class="element-rozet">Su</p>
+              <p>Hayalperest, empatik ve sanatsal bir ruh.</p>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BURÇ DETAYLARI ================= -->
+    <!-- Her kart, aşağıdaki makalelerden birine id ile bağlanır (#kor, #boga ...) -->
+    <section class="bolum bolum-acik" id="detaylar">
+      <div class="kapsayici">
+        <header class="bolum-baslik">
+          <p class="etiket">Ayrıntılar</p>
+          <h2>Burçları Yakından Tanı</h2>
+        </header>
+
+        <div class="detay-liste">
+
+          <article class="detay" id="kor">
+            <div class="detay-sembol" aria-hidden="true">&#9800;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Koç</h3>
+              <p class="tarih">21 Mart – 19 Nisan · Ateş · Öncü · Gezegen: Mars</p>
+              <p>Zodyağın ilk burcu olan Koç, yeni başlangıçları temsil eder. Bir fikri ilk deneyen, ilk cesaret eden burçtur. Enerjisi yüksektir ve beklemekten pek hoşlanmaz.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> cesaret, dürüstlük, girişkenlik</li>
+                <li><strong>Zorlandığı yönler:</strong> sabır, çabuk öfkelenme</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="boga">
+            <div class="detay-sembol" aria-hidden="true">&#9801;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Boğa</h3>
+              <p class="tarih">20 Nisan – 20 Mayıs · Toprak · Sabit · Gezegen: Venüs</p>
+              <p>Boğa, huzuru, güzel yemeği ve rahat bir yaşamı sever. Verdiği sözün arkasında durur; bir kez karar verdi mi yolundan kolay dönmez.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> sadakat, sabır, güvenilirlik</li>
+                <li><strong>Zorlandığı yönler:</strong> değişime direnç, inatçılık</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="ikizler">
+            <div class="detay-sembol" aria-hidden="true">&#9802;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>İkizler</h3>
+              <p class="tarih">21 Mayıs – 20 Haziran · Hava · Değişken · Gezegen: Merkür</p>
+              <p>İkizler iletişim ve merakla ilişkilendirilir. Yeni insanlar, yeni bilgiler ve kısa yolculuklar ona iyi gelir. Aynı anda birkaç işle uğraşabilir.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> zekâ, mizah, uyum yeteneği</li>
+                <li><strong>Zorlandığı yönler:</strong> dağınıklık, kararsızlık</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="yengec">
+            <div class="detay-sembol" aria-hidden="true">&#9803;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Yengeç</h3>
+              <p class="tarih">21 Haziran – 22 Temmuz · Su · Öncü · Gezegen: Ay</p>
+              <p>Yengeç, Ay'ın yönettiği duygusal bir burçtur. Sevdiklerini korur, ev ve aile ona güven verir. Dışarıdan sert görünse de içi hassastır.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> şefkat, sezgi, koruyuculuk</li>
+                <li><strong>Zorlandığı yönler:</strong> alınganlık, geçmişe takılma</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="aslan">
+            <div class="detay-sembol" aria-hidden="true">&#9804;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Aslan</h3>
+              <p class="tarih">23 Temmuz – 22 Ağustos · Ateş · Sabit · Gezegen: Güneş</p>
+              <p>Aslan, Güneş'in yönettiği parlak bir burçtur. Yaratıcılığı, sıcaklığı ve cömertliğiyle çevresine ışık verir. Takdir edilmeyi sever.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> özgüven, cömertlik, yaratıcılık</li>
+                <li><strong>Zorlandığı yönler:</strong> gurur, ilgi bekleme</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="basak">
+            <div class="detay-sembol" aria-hidden="true">&#9805;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Başak</h3>
+              <p class="tarih">23 Ağustos – 22 Eylül · Toprak · Değişken · Gezegen: Merkür</p>
+              <p>Başak düzeni, planı ve işe yaramayı sever. Sorunları çözmekte iyidir, küçük ayrıntıları kaçırmaz. Yardım etmek onun için doğal bir davranıştır.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> çalışkanlık, analiz, yardımseverlik</li>
+                <li><strong>Zorlandığı yönler:</strong> mükemmeliyetçilik, aşırı eleştiri</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="terazi">
+            <div class="detay-sembol" aria-hidden="true">&#9806;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Terazi</h3>
+              <p class="tarih">23 Eylül – 22 Ekim · Hava · Öncü · Gezegen: Venüs</p>
+              <p>Terazi denge, adalet ve güzellikle anılır. İnsanlar arasında köprü kurmakta iyidir. Uyumlu ortamlarda en rahat hissettiği burçlardan biridir.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> diplomasi, adalet duygusu, zarafet</li>
+                <li><strong>Zorlandığı yönler:</strong> karar verme, çatışmadan kaçma</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="akrep">
+            <div class="detay-sembol" aria-hidden="true">&#9807;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Akrep</h3>
+              <p class="tarih">23 Ekim – 21 Kasım · Su · Sabit · Gezegen: Plüton (geleneksel: Mars)</p>
+              <p>Akrep yoğun duygulara ve derin bağlara sahip bir burçtur. Yüzeysel ilişkilerle yetinmez, işin özünü arar. Sır tutmayı bilir.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> kararlılık, tutku, sezgi</li>
+                <li><strong>Zorlandığı yönler:</strong> kıskançlık, kapalılık</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="yay">
+            <div class="detay-sembol" aria-hidden="true">&#9808;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Yay</h3>
+              <p class="tarih">22 Kasım – 21 Aralık · Ateş · Değişken · Gezegen: Jüpiter</p>
+              <p>Yay özgürlüğü, yolculuğu ve öğrenmeyi sever. İyimserliği çevresine de yayılır. Düşündüğünü açıkça söyler, bazen fazla açık sözlü olabilir.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> iyimserlik, dürüstlük, merak</li>
+                <li><strong>Zorlandığı yönler:</strong> sabırsızlık, patavatsızlık</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="oglak">
+            <div class="detay-sembol" aria-hidden="true">&#9809;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Oğlak</h3>
+              <p class="tarih">22 Aralık – 19 Ocak · Toprak · Öncü · Gezegen: Satürn</p>
+              <p>Oğlak hedef koyar ve adım adım ilerler. Sorumluluktan kaçmaz, emeğin karşılığını bekler. Dışarıdan ciddi görünür, yakınlarında esprili olabilir.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> disiplin, hırs, sorumluluk</li>
+                <li><strong>Zorlandığı yönler:</strong> fazla ciddiyet, dinlenmeyi unutma</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="kova">
+            <div class="detay-sembol" aria-hidden="true">&#9810;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Kova</h3>
+              <p class="tarih">20 Ocak – 18 Şubat · Hava · Sabit · Gezegen: Uranüs (geleneksel: Satürn)</p>
+              <p>Kova özgün fikirleri ve bağımsızlığıyla bilinir. Kalabalığın düşündüğünden farklı düşünmekten çekinmez. Toplumsal konulara ilgi duyar.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> özgünlük, yenilikçilik, insancıllık</li>
+                <li><strong>Zorlandığı yönler:</strong> mesafeli durma, fikirde inat</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="detay" id="balik">
+            <div class="detay-sembol" aria-hidden="true">&#9811;&#xFE0E;</div>
+            <div class="detay-icerik">
+              <h3>Balık</h3>
+              <p class="tarih">19 Şubat – 20 Mart · Su · Değişken · Gezegen: Neptün (geleneksel: Jüpiter)</p>
+              <p>Balık, zodyağın son burcudur. Hayal gücü ve empatisi güçlüdür; müzik, resim ve yazı gibi alanlara yatkın sayılır. Başkalarının duygusunu kolay hisseder.</p>
+              <ul>
+                <li><strong>Güçlü yönler:</strong> empati, hayal gücü, şefkat</li>
+                <li><strong>Zorlandığı yönler:</strong> sınır koyma, gerçeklikten kaçma</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= YÜKSELEN BURÇ NEDİR? ================= -->
+    <section class="bolum" id="yukselen-burc">
+      <div class="kapsayici yukselen-ic">
+        <div class="yukselen-metin">
+          <p class="etiket">Yükselen Burç</p>
+          <h2>Yükselen Burç Nedir?</h2>
+          <p>Yükselen burç, sen doğduğun anda doğu ufkunda yükselmekte olan burçtur. Astrolojide dış dünyaya nasıl göründüğünü, yeni insanlara ilk izlenimini ve hayata yaklaşımını anlatır.</p>
+
+          <h3>Güneş burcu ile farkı</h3>
+          <p>Güneş burcu, doğduğun gün Güneş'in bulunduğu burçtur ve çekirdek kimliğini temsil eder. Yükselen burç ise "maskeni" ve tarzını anlatır. İkisi aynı olabileceği gibi çoğu zaman farklıdır.</p>
+
+          <h3>Doğum saati ve yeri neden önemli?</h3>
+          <p>Yükselen burç yaklaşık iki saatte bir değişir. Bu yüzden doğum saatin ve doğum yerin olmadan doğru hesaplanamaz. Aynı gün ve farklı saatte doğan iki kişinin yükselen burcu farklı olabilir.</p>
+
+          <a class="dugme" href="#hesapla">Yükselen Burcunu Hesapla</a>
+        </div>
+
+        <!-- ================= YÜKSELEN BURÇ FORMU ================= -->
+        <div class="form-kart" id="hesapla">
+          <h3>Doğum Bilgilerin</h3>
+
+          <!-- Form gönderilince sayfa #hesaplama-notu bölümüne gider ve not görünür.
+               Gerçek hesaplama için bir astroloji kütüphanesi veya API gerekir. -->
+          <form action="#hesaplama-notu" method="get">
+            <label for="dogum-tarihi">Doğum tarihi</label>
+            <input type="date" id="dogum-tarihi" name="tarih" required>
+
+            <label for="dogum-saati">Doğum saati</label>
+            <input type="time" id="dogum-saati" name="saat" required>
+
+            <label for="dogum-yeri">Doğum yeri</label>
+            <input type="text" id="dogum-yeri" name="yer" placeholder="Örn. İstanbul" required>
+
+            <button type="submit" class="dugme">Yükselen Burcunu Hesapla</button>
+          </form>
+
+          <div class="not-kutusu" id="hesaplama-notu" role="status">
+            <strong>Hesaplama özelliği henüz etkin değil.</strong>
+            Yükselen burç hesabı için gezegen konumlarını hesaplayan bir yazılım ya da API gerekir. Bu sürümde böyle bir mekanizma yok; bu yüzden gerçekmiş gibi bir sonuç göstermiyoruz.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GÜNLÜK BURÇ YORUMLARI ================= -->
+    <section class="bolum bolum-acik" id="gunluk">
+      <div class="kapsayici">
+        <header class="bolum-baslik">
+          <p class="etiket">Günün Enerjisi</p>
+          <h2>Günlük Burç Yorumları</h2>
+          <p>Bu yorumlar örnek metinlerdir ve her gün otomatik değişmez. Eğlence amaçlıdır, bilimsel bir tahmin değildir.</p>
+        </header>
+
+        <div class="yorum-izgara">
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9800;&#xFE0E;</span> Koç</h3><p>Bugün bir işe girişmek için iyi bir gün. Yalnız önce bir kahve içip plan yap.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9801;&#xFE0E;</span> Boğa</h3><p>Rutinin sana iyi geliyor. Bugün kendine küçük bir ödül almayı düşün.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9802;&#xFE0E;</span> İkizler</h3><p>Eski bir arkadaştan gelecek mesaj gününü güzelleştirebilir. Telefonu elinin altında tut.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9803;&#xFE0E;</span> Yengeç</h3><p>Evde geçirilecek sakin bir akşam enerjini toplar. Sevdiğin bir yemek pişir.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9804;&#xFE0E;</span> Aslan</h3><p>Fikirlerini paylaşmaktan çekinme, dinleyenin çok olabilir. Mütevazı bir ton yeter.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9805;&#xFE0E;</span> Başak</h3><p>Yapılacaklar listen bugün kısalabilir. Bir şeyi kusursuz olmadan bitirmeyi dene.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9806;&#xFE0E;</span> Terazi</h3><p>Bekleyen bir karar için bugün iyi bir an. İlk içgüdün sandığından isabetli.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9807;&#xFE0E;</span> Akrep</h3><p>Sezgilerin güçlü, ama bir şeyi varsaymadan önce sor. Cevap seni şaşırtabilir.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9808;&#xFE0E;</span> Yay</h3><p>Rotanı değiştirmek istiyorsan harita bakmak için güzel bir gün. Yeni bir yer listesine ekle.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9809;&#xFE0E;</span> Oğlak</h3><p>Emeğin fark ediliyor. Bugün kendine mola vermeyi de görev say.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9810;&#xFE0E;</span> Kova</h3><p>Garip gelen bir fikir iyi çıkabilir. Not al, yarına bırakma.</p></article>
+          <article class="yorum-kart"><h3><span aria-hidden="true">&#9811;&#xFE0E;</span> Balık</h3><p>Müzik dinlemek ya da bir şeyler çizmek zihnini rahatlatır. Hayallerine biraz zaman ayır.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ASTROLOJİ REHBERİ ================= -->
+    <section class="bolum bolum-krem" id="rehber">
+      <div class="kapsayici">
+        <header class="bolum-baslik">
+          <p class="etiket">Rehber</p>
+          <h2>Astroloji Rehberi</h2>
+        </header>
+
+        <div class="rehber-izgara">
+          <article class="rehber-kart">
+            <h3>Güneş burcu nedir?</h3>
+            <p>Doğduğun gün Güneş'in bulunduğu burçtur. Genel karakterini, temel ihtiyaçlarını ve hayattaki ana motivasyonunu anlatır. Gazetelerdeki burç yorumları genellikle Güneş burcuna göre yazılır.</p>
+          </article>
+
+          <article class="rehber-kart">
+            <h3>Yükselen burç nedir?</h3>
+            <p>Doğduğun anda doğu ufkunda yükselen burçtur. Dış görünüşünü, ilk izlenimini ve yeni durumlara tepkini temsil eder. Hesaplamak için doğum saati ve yeri gerekir.</p>
+          </article>
+
+          <article class="rehber-kart">
+            <h3>Ay burcu nedir?</h3>
+            <p>Doğduğun anda Ay'ın bulunduğu burçtur. Duygularını, iç dünyanı ve kendini güvende hissettiğin şeyleri anlatır. Ay yaklaşık iki buçuk günde bir burç değiştirir.</p>
+          </article>
+
+          <article class="rehber-kart">
+            <h3>Dört element</h3>
+            <p>On iki burç dört gruba ayrılır:</p>
+            <ul>
+              <li><strong>Ateş:</strong> Koç, Aslan, Yay. Enerji ve atılganlık.</li>
+              <li><strong>Toprak:</strong> Boğa, Başak, Oğlak. Somutluk ve sabır.</li>
+              <li><strong>Hava:</strong> İkizler, Terazi, Kova. Fikir ve iletişim.</li>
+              <li><strong>Su:</strong> Yengeç, Akrep, Balık. Duygu ve sezgi.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Sembol ve tarih tablosu -->
+        <article class="rehber-kart tablo-kart">
+          <h3>Burçların sembolleri ve tarihleri</h3>
+          <div class="tablo-kaydir">
+            <table>
+              <thead>
+                <tr><th scope="col">Sembol</th><th scope="col">Burç</th><th scope="col">Tarih aralığı</th><th scope="col">Element</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>&#9800;&#xFE0E;</td><td>Koç</td><td>21 Mart – 19 Nisan</td><td>Ateş</td></tr>
+                <tr><td>&#9801;&#xFE0E;</td><td>Boğa</td><td>20 Nisan – 20 Mayıs</td><td>Toprak</td></tr>
+                <tr><td>&#9802;&#xFE0E;</td><td>İkizler</td><td>21 Mayıs – 20 Haziran</td><td>Hava</td></tr>
+                <tr><td>&#9803;&#xFE0E;</td><td>Yengeç</td><td>21 Haziran – 22 Temmuz</td><td>Su</td></tr>
+                <tr><td>&#9804;&#xFE0E;</td><td>Aslan</td><td>23 Temmuz – 22 Ağustos</td><td>Ateş</td></tr>
+                <tr><td>&#9805;&#xFE0E;</td><td>Başak</td><td>23 Ağustos – 22 Eylül</td><td>Toprak</td></tr>
+                <tr><td>&#9806;&#xFE0E;</td><td>Terazi</td><td>23 Eylül – 22 Ekim</td><td>Hava</td></tr>
+                <tr><td>&#9807;&#xFE0E;</td><td>Akrep</td><td>23 Ekim – 21 Kasım</td><td>Su</td></tr>
+                <tr><td>&#9808;&#xFE0E;</td><td>Yay</td><td>22 Kasım – 21 Aralık</td><td>Ateş</td></tr>
+                <tr><td>&#9809;&#xFE0E;</td><td>Oğlak</td><td>22 Aralık – 19 Ocak</td><td>Toprak</td></tr>
+                <tr><td>&#9810;&#xFE0E;</td><td>Kova</td><td>20 Ocak – 18 Şubat</td><td>Hava</td></tr>
+                <tr><td>&#9811;&#xFE0E;</td><td>Balık</td><td>19 Şubat – 20 Mart</td><td>Su</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ALT BİLGİ ================= -->
+  <footer class="alt">
+    <div class="kapsayici alt-ic">
+      <div class="alt-marka">
+        <a class="logo" href="#ana-sayfa">ASTRA</a>
+        <p>Burçları ve yükselen burcu sade bir dille anlatan kozmik rehberin.</p>
+      </div>
+      <nav class="alt-menu" aria-label="Alt menü">
+        <a href="#ana-sayfa">Ana Sayfa</a>
+        <a href="#burclar">12 Burç</a>
+        <a href="#yukselen-burc">Yükselen Burç</a>
+        <a href="#gunluk">Günlük Burç Yorumları</a>
+        <a href="#rehber">Astroloji Rehberi</a>
+      </nav>
+    </div>
+    <div class="kapsayici alt-alt">
+      <p>Astroloji eğlence ve kişisel keşif amaçlıdır.</p>
+      <p>&copy; 2026 ASTRA — Kozmik Rehberin. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

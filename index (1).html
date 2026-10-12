@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASTRA — Kozmik Rehberin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="kap ust">
+    <div class="logo">ASTRA</div>
+    <nav class="menu" aria-label="Ana menü">
+      <a href="#elementler">Elementler</a>
+      <a href="#burclar">Burçlar</a>
+      <a href="#yukselen">Yükselen Burç</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="kap kahraman">
+      <div class="kahraman-metin">
+        <div class="etiket">Burçlar için bilgi rehberi</div>
+        <h1>Gökyüzünün dilini birlikte okuyalım</h1>
+        <p>ASTRA, on iki burcun elementini, niteliğini ve yönetici gezegenini sade bir dille anlatır. Bir burç kartına dokun, ayrıntılar hemen açılsın.</p>
+        <a class="dugme" href="#burclar">Burçları keşfet</a>
+      </div>
+      <div class="kahraman-gorsel">
+        <svg width="360" height="360" viewBox="0 0 360 360" role="img" aria-label="Yörüngelerde dönen gezegenleri gösteren süs çizimi">
+          <circle cx="180" cy="180" r="160" fill="none" stroke="#2A3578" stroke-width="1.5"/>
+          <circle cx="180" cy="180" r="116" fill="none" stroke="#3B3F8F" stroke-width="1.5"/>
+          <circle cx="180" cy="180" r="72" fill="none" stroke="#5B4FA8" stroke-width="1.5"/>
+          <circle cx="180" cy="180" r="30" fill="#D8B45A"/>
+          <circle cx="296" cy="180" r="12" fill="#C9B8F5"/>
+          <circle cx="76" cy="130" r="9" fill="#A78BFA"/>
+          <circle cx="180" cy="20" r="7" fill="#F5EFE0"/>
+          <circle cx="252" cy="248" r="6" fill="#F5EFE0"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="elementler" class="elementler">
+      <div class="kap">
+        <h2>Dört element</h2>
+        <p class="giris">Her burç dört elementten birine bağlıdır. Element, burcun temel enerjisini anlatan en eski ayrımdır.</p>
+        <div class="kartlar">
+          <article class="element-kart"><h3>Ateş</h3><div class="liste">Koç · Aslan · Yay</div><p>Hareketli, cesur ve ilham verici. Ateş burçları harekete geçmeyi sever.</p></article>
+          <article class="element-kart"><h3>Toprak</h3><div class="liste">Boğa · Başak · Oğlak</div><p>Sabırlı, pratik ve güvenilir. Toprak burçları somut sonuçlara değer verir.</p></article>
+          <article class="element-kart"><h3>Hava</h3><div class="liste">İkizler · Terazi · Kova</div><p>Meraklı, sosyal ve fikir odaklı. Hava burçları konuşmayı ve öğrenmeyi sever.</p></article>
+          <article class="element-kart"><h3>Su</h3><div class="liste">Yengeç · Akrep · Balık</div><p>Duygusal, sezgisel ve derin. Su burçları hislerini ve çevresindekileri iyi okur.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="burclar" class="burclar">
+      <div class="kap">
+        <h2>On iki burç</h2>
+        <p class="giris">Bir kart seçtiğinde ayrıntıları aşağıdaki panelde açılır.</p>
+        <ul class="burc-izgara">
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="true" data-ad="Koç" data-simge="♈︎" data-tarih="21 Mart – 19 Nisan" data-element="Ateş" data-nitelik="Öncü" data-gezegen="Mars" data-ozet="Zodyağın ilk burcu olan Koç, yeni başlangıçların ve cesaretin temsilcisidir. Hızlı karar verir ve harekete geçmekten çekinmez." data-guclu="Cesur, enerjik, girişimci ve dürüst." data-dikkat="Sabırsızlık ve çabuk öfkelenme eğilimi.">
+            <span class="simge" aria-hidden="true">♈︎</span>
+            <span class="ad">Koç</span>
+            <span class="tarih">21 Mart – 19 Nisan</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Boğa" data-simge="♉︎" data-tarih="20 Nisan – 20 Mayıs" data-element="Toprak" data-nitelik="Sabit" data-gezegen="Venüs" data-ozet="Boğa, konfor, güven ve güzelliğe değer verir. Bir kez karar verdi mi kolay kolay vazgeçmez." data-guclu="Sabırlı, güvenilir, kararlı ve duyusal zevklere açık." data-dikkat="İnatçılık ve değişime direnç.">
+            <span class="simge" aria-hidden="true">♉︎</span>
+            <span class="ad">Boğa</span>
+            <span class="tarih">20 Nisan – 20 Mayıs</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="İkizler" data-simge="♊︎" data-tarih="21 Mayıs – 20 Haziran" data-element="Hava" data-nitelik="Değişken" data-gezegen="Merkür" data-ozet="İkizler merakın ve iletişimin burcudur. Her konuya ilgi duyar, fikir alışverişinden keyif alır." data-guclu="Hızlı öğrenen, esprili, uyumlu ve sosyal." data-dikkat="Dağınıklık ve bir işi yarım bırakma eğilimi.">
+            <span class="simge" aria-hidden="true">♊︎</span>
+            <span class="ad">İkizler</span>
+            <span class="tarih">21 Mayıs – 20 Haziran</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Yengeç" data-simge="♋︎" data-tarih="21 Haziran – 22 Temmuz" data-element="Su" data-nitelik="Öncü" data-gezegen="Ay" data-ozet="Yengeç yuvaya, aileye ve duygusal bağlara önem verir. Sezgileri güçlüdür ve sevdiklerini korur." data-guclu="Şefkatli, sezgisel, koruyucu ve sadık." data-dikkat="Alıngan olma ve geçmişe takılma eğilimi.">
+            <span class="simge" aria-hidden="true">♋︎</span>
+            <span class="ad">Yengeç</span>
+            <span class="tarih">21 Haziran – 22 Temmuz</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Aslan" data-simge="♌︎" data-tarih="23 Temmuz – 22 Ağustos" data-element="Ateş" data-nitelik="Sabit" data-gezegen="Güneş" data-ozet="Aslan sahnenin ortasında olmayı sever. Cömerttir, sıcak kanlıdır ve çevresine ilham verir." data-guclu="Özgüvenli, cömert, yaratıcı ve lider ruhlu." data-dikkat="Gurur ve takdir görme ihtiyacı.">
+            <span class="simge" aria-hidden="true">♌︎</span>
+            <span class="ad">Aslan</span>
+            <span class="tarih">23 Temmuz – 22 Ağustos</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Başak" data-simge="♍︎" data-tarih="23 Ağustos – 22 Eylül" data-element="Toprak" data-nitelik="Değişken" data-gezegen="Merkür" data-ozet="Başak ayrıntıya ve düzene önem verir. Yardım etmeyi sever ve işini titizlikle yapar." data-guclu="Analitik, çalışkan, dikkatli ve yardımsever." data-dikkat="Aşırı eleştirel olma ve mükemmeliyetçilik.">
+            <span class="simge" aria-hidden="true">♍︎</span>
+            <span class="ad">Başak</span>
+            <span class="tarih">23 Ağustos – 22 Eylül</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Terazi" data-simge="♎︎" data-tarih="23 Eylül – 22 Ekim" data-element="Hava" data-nitelik="Öncü" data-gezegen="Venüs" data-ozet="Terazi denge, adalet ve uyum arar. İlişkilere önem verir ve zarif bir iletişim kurar." data-guclu="Diplomatik, adil, nazik ve estetik duyusu güçlü." data-dikkat="Karar vermekte zorlanma ve çatışmadan kaçınma.">
+            <span class="simge" aria-hidden="true">♎︎</span>
+            <span class="ad">Terazi</span>
+            <span class="tarih">23 Eylül – 22 Ekim</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Akrep" data-simge="♏︎" data-tarih="23 Ekim – 21 Kasım" data-element="Su" data-nitelik="Sabit" data-gezegen="Plüton" data-ozet="Akrep yoğun duyguların ve derinliğin burcudur. Yüzeyle yetinmez, gerçeğin altını araştırır." data-guclu="Kararlı, tutkulu, gözlemci ve dayanıklı." data-dikkat="Kıskançlık, kuşkuculuk ve içine kapanma eğilimi.">
+            <span class="simge" aria-hidden="true">♏︎</span>
+            <span class="ad">Akrep</span>
+            <span class="tarih">23 Ekim – 21 Kasım</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Yay" data-simge="♐︎" data-tarih="22 Kasım – 21 Aralık" data-element="Ateş" data-nitelik="Değişken" data-gezegen="Jüpiter" data-ozet="Yay özgürlüğü, keşfi ve felsefeyi sever. İyimserdir ve ufkunu genişletmek ister." data-guclu="İyimser, açık sözlü, maceracı ve cömert." data-dikkat="Fazla açık sözlülük ve sorumluluktan kaçma eğilimi.">
+            <span class="simge" aria-hidden="true">♐︎</span>
+            <span class="ad">Yay</span>
+            <span class="tarih">22 Kasım – 21 Aralık</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Oğlak" data-simge="♑︎" data-tarih="22 Aralık – 19 Ocak" data-element="Toprak" data-nitelik="Öncü" data-gezegen="Satürn" data-ozet="Oğlak hedef odaklıdır ve sorumluluk almaktan çekinmez. Adım adım ilerleyerek zirveye çıkmayı sever." data-guclu="Disiplinli, azimli, sorumlu ve planlı." data-dikkat="Fazla ciddi olma ve kendini dinlendirmeyi unutma.">
+            <span class="simge" aria-hidden="true">♑︎</span>
+            <span class="ad">Oğlak</span>
+            <span class="tarih">22 Aralık – 19 Ocak</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Kova" data-simge="♒︎" data-tarih="20 Ocak – 18 Şubat" data-element="Hava" data-nitelik="Sabit" data-gezegen="Uranüs" data-ozet="Kova özgün fikirlerin ve toplumsal duyarlılığın burcudur. Kalıpların dışında düşünmeyi sever." data-guclu="Yenilikçi, bağımsız, insancıl ve özgün." data-dikkat="Mesafeli görünme ve inatla farklı olma eğilimi.">
+            <span class="simge" aria-hidden="true">♒︎</span>
+            <span class="ad">Kova</span>
+            <span class="tarih">20 Ocak – 18 Şubat</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="burc-kart" aria-pressed="false" data-ad="Balık" data-simge="♓︎" data-tarih="19 Şubat – 20 Mart" data-element="Su" data-nitelik="Değişken" data-gezegen="Neptün" data-ozet="Balık hayal gücünün ve empatinin burcudur. Sanata ve sezgiye yakındır, başkalarının duygusunu kolay hisseder." data-guclu="Empatik, yaratıcı, hayalperest ve anlayışlı." data-dikkat="Gerçeklerden kaçma ve fazla etkilenme eğilimi.">
+            <span class="simge" aria-hidden="true">♓︎</span>
+            <span class="ad">Balık</span>
+            <span class="tarih">19 Şubat – 20 Mart</span>
+          </button>
+        </li>
+        </ul>
+
+        <div class="panel" id="panel" aria-live="polite">
+          <div class="panel-sol">
+            <div class="panel-simge" id="p-simge" aria-hidden="true">♈︎</div>
+            <h3 id="p-ad">Koç</h3>
+            <div class="panel-tarih" id="p-tarih">21 Mart – 19 Nisan</div>
+          </div>
+          <div class="panel-sag">
+            <div class="bilgiler">
+              <div class="bilgi"><small>Element</small><strong id="p-element">Ateş</strong></div>
+              <div class="bilgi"><small>Nitelik</small><strong id="p-nitelik">Öncü</strong></div>
+              <div class="bilgi"><small>Yönetici gezegen</small><strong id="p-gezegen">Mars</strong></div>
+            </div>
+            <p class="ozet" id="p-ozet">Zodyağın ilk burcu olan Koç, yeni başlangıçların ve cesaretin temsilcisidir. Hızlı karar verir ve harekete geçmekten çekinmez.</p>
+            <h4>Güçlü yanları</h4>
+            <p id="p-guclu">Cesur, enerjik, girişimci ve dürüst.</p>
+            <h4>Dikkat etmesi gerekenler</h4>
+            <p id="p-dikkat">Sabırsızlık ve çabuk öfkelenme eğilimi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yukselen" class="yukselen">
+      <div class="kap">
+        <div class="yukselen-kutu">
+          <h2>Yükselen burç hesaplama</h2>
+          <p>Yükselen burç; doğum saati, tarihi ve yeri gerektirir. Bu hesaplama henüz etkin değil, bu yüzden aşağıdaki alan şimdilik kapalı.</p>
+          <div class="form">
+            <div class="alan"><label for="dg">Doğum tarihi</label><input id="dg" type="text" disabled placeholder="GG.AA.YYYY"></div>
+            <div class="alan"><label for="ds">Doğum saati</label><input id="ds" type="text" disabled placeholder="SS:DD"></div>
+            <div class="alan"><label for="dy">Doğum yeri</label><input id="dy" type="text" disabled placeholder="Şehir"></div>
+            <button type="button" disabled>Henüz etkin değil</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt">
+    <div class="kap">
+      <div class="logo">ASTRA</div>
+      <p>Bu sitedeki içerik eğlence ve genel bilgi amaçlıdır. Astroloji bilimsel olarak kanıtlanmış bir yöntem değildir; önemli kararlarını yorumlara göre vermemelisin.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Burç kartına tıklayınca ayrıntı panelini güncelle
+    var kartlar = document.querySelectorAll('.burc-kart');
+    kartlar.forEach(function (kart) {
+      kart.addEventListener('click', function () {
+        kartlar.forEach(function (k) { k.setAttribute('aria-pressed', 'false'); });
+        kart.setAttribute('aria-pressed', 'true');
+        var d = kart.dataset;
+        document.getElementById('p-simge').textContent = d.simge;
+        document.getElementById('p-ad').textContent = d.ad;
+        document.getElementById('p-tarih').textContent = d.tarih;
+        document.getElementById('p-element').textContent = d.element;
+        document.getElementById('p-nitelik').textContent = d.nitelik;
+        document.getElementById('p-gezegen').textContent = d.gezegen;
+        document.getElementById('p-ozet').textContent = d.ozet;
+        document.getElementById('p-guclu').textContent = d.guclu;
+        document.getElementById('p-dikkat').textContent = d.dikkat;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* ASTRA — Kozmik Rehberin */
+:root{
+  --gece:#0B1230;
+  --lacivert:#101946;
+  --kart:#171F54;
+  --kenar:#2F3A86;
+  --lila:#A78BFA;
+  --pastel:#C9B8F5;
+  --krem:#F5EFE0;
+  --altin:#D8B45A;
+  --metin:#E4DFF3;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--gece);color:var(--krem);font-family:"Figtree",system-ui,sans-serif;line-height:1.6}
+a{color:var(--altin)}
+a:hover{color:#F1D58A}
+.kap{max-width:1200px;margin:0 auto;padding:0 32px}
+h1,h2,h3,.logo{font-family:"Cormorant Garamond",Georgia,serif}
+h2{margin:0 0 12px;font-size:46px;font-weight:600}
+.giris{margin:0 0 40px;font-size:18px;color:#D9D3EC;max-width:640px}
+
+/* Üst menü */
+.ust{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px 0}
+.logo{font-size:32px;font-weight:700;letter-spacing:6px;color:var(--altin)}
+.menu{display:flex;flex-wrap:wrap;gap:24px}
+.menu a{color:#E9E4F7;text-decoration:none;font-size:15px;padding:12px 4px}
+.menu a:hover{color:var(--altin)}
+
+/* Kahraman alan */
+.kahraman{display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding:48px 0 96px}
+.kahraman-metin{flex:1 1 440px;min-width:0}
+.etiket{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--pastel);margin-bottom:20px}
+.kahraman h1{margin:0 0 24px;font-size:68px;line-height:1.05;font-weight:600}
+.kahraman p{margin:0 0 36px;font-size:19px;color:#D9D3EC;max-width:560px}
+.dugme{display:inline-block;background:var(--altin);color:var(--gece);text-decoration:none;font-weight:600;font-size:17px;padding:14px 32px;border-radius:999px}
+.dugme:hover{background:#F1D58A;color:var(--gece)}
+.kahraman-gorsel{flex:1 1 320px;min-width:0;display:flex;justify-content:center}
+.kahraman-gorsel svg{max-width:100%;height:auto}
+
+/* Elementler */
+.elementler{background:var(--lacivert);padding:96px 0}
+.kartlar{display:flex;flex-wrap:wrap;gap:24px}
+.element-kart{flex:1 1 240px;min-width:0;background:var(--kart);border:1px solid var(--kenar);border-radius:16px;padding:28px}
+.element-kart h3{margin:0 0 8px;font-size:30px;color:var(--altin)}
+.element-kart .liste{font-size:14px;color:var(--pastel);margin-bottom:12px}
+.element-kart p{margin:0;color:var(--metin)}
+
+/* Burçlar */
+.burclar{padding:96px 0 48px}
+.burc-izgara{display:flex;flex-wrap:wrap;gap:16px;list-style:none;margin:0;padding:0}
+.burc-izgara li{flex:1 1 200px;min-width:0;display:flex}
+.burc-kart{flex:1;text-align:left;cursor:pointer;border-radius:16px;padding:20px 22px;color:var(--krem);background:#141C45;border:2px solid var(--kenar);font:inherit;min-height:44px}
+.burc-kart:hover{border-color:var(--lila)}
+.burc-kart[aria-pressed="true"]{background:#2A2F7A;border-color:var(--altin)}
+.burc-kart .simge{display:block;font-size:40px;line-height:1.1;color:var(--altin);margin-bottom:8px}
+.burc-kart .ad{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:600}
+.burc-kart .tarih{display:block;font-size:14px;color:var(--pastel)}
+
+/* Ayrıntı paneli */
+.panel{margin-top:40px;background:var(--kart);border:1px solid #3B3F8F;border-radius:20px;padding:40px;display:flex;flex-wrap:wrap;gap:40px}
+.panel-sol{flex:0 1 220px;min-width:0;text-align:center}
+.panel-simge{font-size:112px;line-height:1.1;color:var(--altin)}
+.panel-sol h3{margin:8px 0 4px;font-size:40px;font-weight:600}
+.panel-tarih{color:var(--pastel)}
+.panel-sag{flex:1 1 400px;min-width:0}
+.bilgiler{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.bilgi{background:var(--gece);border-radius:12px;padding:12px 20px}
+.bilgi small{display:block;font-size:13px;color:var(--pastel)}
+.bilgi strong{font-weight:600}
+.ozet{margin:0 0 20px;font-size:18px;color:#F0EBFA}
+.panel-sag h4{margin:0 0 6px;color:var(--altin);font-size:16px;letter-spacing:1px}
+.panel-sag p{margin:0 0 20px;color:var(--metin)}
+.panel-sag p:last-child{margin:0}
+
+/* Yükselen burç */
+.yukselen{padding:48px 0 96px}
+.yukselen-kutu{background:var(--lacivert);border:1px dashed #5B4FA8;border-radius:20px;padding:40px}
+.yukselen-kutu h2{font-size:38px}
+.yukselen-kutu > p{margin:0 0 24px;font-size:18px;color:#D9D3EC;max-width:680px}
+.form{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end}
+.alan{flex:1 1 180px;min-width:0}
+.alan label{display:block;font-size:14px;color:var(--pastel);margin-bottom:6px}
+.alan input{width:100%;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid #3B3F8F;background:var(--gece);color:#9F9AB8}
+.form button{min-height:44px;padding:0 28px;border-radius:999px;border:1px solid #5B4FA8;background:var(--kart);color:#B7B1D0;font-size:16px}
+
+/* Alt bilgi */
+.alt{border-top:1px solid #2A3578;padding:40px 0 56px}
+.alt .kap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+.alt .logo{font-size:26px;letter-spacing:5px}
+.alt p{margin:0;max-width:620px;font-size:14px;color:#B7B1D0}
+
+@media (max-width:600px){
+  .kahraman h1{font-size:44px}
+  h2{font-size:36px}
+  .panel{padding:24px}
+}
